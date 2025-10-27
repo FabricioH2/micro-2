@@ -5,7 +5,7 @@ FROM fabricioph2/curso:2
 WORKDIR /app
 
 # Copia los archivos del proyecto
-COPY app.py
+COPY app.py .
 
 
 # Instala Flask
