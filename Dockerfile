@@ -3,6 +3,7 @@ FROM fabricioph2/curso:2
 
 # Establece el directorio de trabajo
 WORKDIR /app
+RUN addgroup --system appgroup && adduser --system --group appuser
 
 # Copia los archivos del proyecto
 COPY app.py .
