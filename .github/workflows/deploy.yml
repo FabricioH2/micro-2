@@ -64,7 +64,7 @@ jobs:
       - name: Update Deployment tag
         run: |
           echo "Reemplazando {{ tag }} con ${{ github.run_number }}"
-          sed -i "s|{{ tag }}|${{ github.run_number }}|g" oc2.yaml
+          sed -i "s|{{ tag }}|${{ github.run_number }}|g" oc2.yml
           cat oc2.yml
 
       - name: Deploy files
