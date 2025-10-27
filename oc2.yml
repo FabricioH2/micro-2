@@ -4,20 +4,20 @@ metadata:
   name: mi-deployment2
   namespace: ffisa-dev
   labels:
-    app: mi-app
+    app: mi-app2
     areanegocio: tecnologia
 spec:
   replicas: 2
   selector:
     matchLabels:
-      app: mi-app
+      app: mi-app2
   template:
     metadata:
       labels:
-        app: mi-app
+        app: mi-app2
     spec:
       containers:
-        - name: contenedor-principal
+        - name: contenedor-principal2
           image: fabricioph2/micro-2:latest
           imagePullPolicy: Always
           ports:
@@ -42,7 +42,7 @@ metadata:
   namespace: ffisa-dev
 spec:
   selector:
-    app: mi-app
+    app: mi-app2
   ports:
     - protocol: TCP
       port: 4000
