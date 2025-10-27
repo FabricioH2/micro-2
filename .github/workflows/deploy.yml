@@ -65,10 +65,10 @@ jobs:
         run: |
           echo "Reemplazando {{ tag }} con ${{ github.run_number }}"
           sed -i "s|{{ tag }}|${{ github.run_number }}|g" oc2.yaml
-          cat oc.yaml
+          cat oc2.yml
 
       - name: Deploy files
         run: |
           oc project ffisa-dev
-          oc apply -f oc2.yaml
+          oc apply -f oc2.yml
           oc rollout status deployment/mi-app-deployment
