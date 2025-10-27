@@ -71,4 +71,4 @@ jobs:
         run: |
           oc project ffisa-dev
           oc apply -f oc2.yml
-          oc rollout status deployment/mi-app-deployment
+          oc rollout status deployment/mi-deployment2
