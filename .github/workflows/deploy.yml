@@ -9,5 +9,5 @@ jobs:
   build-and-deploy:
     uses: fabricioH2/devops-pipelines/.github/workflows/main.yml@main
     with:
-      docker_image_name: fabricioph2/micro-2
+      docker_image_name: hola-mundo-clase123
     secrets: inherit
